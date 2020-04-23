@@ -11,7 +11,7 @@ Surge 4.0 :
 cron "2 7,14,20 * * *" script-path=https://raw.githubusercontent.com/itcbx/CheckInJS/master/JiuFuWallet.js
 
 # 获取玖富钱包用户信息
-http-request ^https:\/\/api3\.9f\.cn\/.*\/app\/v4\/safe\/optimize max-size=0,script-path=https://raw.githubusercontent.com/itcbx/CheckInJS/master/JiuFuWallet.js
+http-request ^https:\/\/api3\.9f\.cn\/.*\/app\/v4\/cunguan\/account\/info max-size=0,script-path=https://raw.githubusercontent.com/itcbx/CheckInJS/master/JiuFuWallet.js
 ~~~~~~~~~~~~~~~~
 QX 1.0.5 :
 [task_local]
@@ -19,7 +19,7 @@ QX 1.0.5 :
 
 [rewrite_local]
 # 获取玖富钱包用户信息. QX 1.0.5(188+):
-^https:\/\/api3\.9f\.cn\/.*\/app\/v4\/safe\/optimize url script-request-header JiuFuWallet.js
+^https:\/\/api3\.9f\.cn\/.*\/app\/v4\/cunguan\/account\/info url script-request-header JiuFuWallet.js
 ~~~~~~~~~~~~~~~~
 QX or Surge MITM = api3.9f.cn
 ~~~~~~~~~~~~~~~~
